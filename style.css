@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    width: 375px;
+    font-family: 'Lato', 'ヒラギノ角ゴ Pro';
+    margin: 0 auto;
+    color: #fff;
+    background-color: #000000;
+}
+
+/* ヘッダー */
+.header {
+    margin-top: 0;
+}
+
+.header-title {
+    width: 200px;
+    height: 17px;
+    line-height: 20px;
+    margin: 16px auto;
+    font-size: 14px;
+}
+
+.header-title a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+.main-visual img {
+    width: 375px;
+}
+
+.about-visual img {
+    width: 375px;
+}
+
+.icon-sns {
+    list-style: none;
+}
+
+.icon-sns img {
+
+    width: 30px;
+}
+
+
+.works img {
+    width: 310px;
+}

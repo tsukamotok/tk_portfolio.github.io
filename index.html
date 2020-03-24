@@ -2,13 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Kyosuke Tsukamoto portfolio</title>
 </head>
 <body>
+<div class="container">
 
 <header class="header">
-<h1>KYOSUKE TSUKAMOTO</h1>
+<h1 class="header-title"><a href="#">KYOSUKE TSUKAMOTO</a></h1>
 <nav>
 <ul>
 <li>TOP</li>
@@ -20,14 +22,15 @@
 <!-- /header --></header>
 
 <div class="main">
-
 <div class="main-visual">
-<img src="/images/png/main_visual.png" alt="塚本恭輔のポートフォリオ">
+<img src="./images/png/main_visual.png" alt="塚本恭輔のポートフォリオ">
 <!-- /main-visual --></div>
 
 <section class="about">
+<div class="about-visual">
 <h2>ABOUT</h2>
-<img src="/images/png/tk.png" alt="塚本恭輔輔について">
+<img src="./images/png/tk.png" alt="塚本恭輔輔について">
+</div>
 
 <section class="profile">
 <h3>PROFILE</h3>
@@ -38,59 +41,85 @@
 公立はこだて未来大学 情報デザインコースを卒業し、株式会社アイスタイルに新卒入社。<br>
 UIデザイナーとして、デザイン・コーディングなどの業務を行う。</p>
 <ul class="icon-sns">
-<li><a href="https://www.instagram.com/tukkyo117/?hl=ja"><img src="/images/png/icon-instagram.png" alt="instagram"></a></li>
-<li><a href="https://www.facebook.com/profile.php?id=100022762025755"><img src="/images/png/icon-facebook.png" alt="facebook"></a></li>
+<li><a href="https://www.instagram.com/tukkyo117/?hl=ja"><img src="./images/png/icon-instagram.png" alt="instagram"></a></li>
+<li><a href="https://www.facebook.com/profile.php?id=100022762025755"><img src="./images/png/icon-facebook.png" alt="facebook"></a></li>
 <!-- /icon-sns --></ul>
 <!-- /profile --></section>
 
 <section class="design">
 <h3>DESIGN</h3>
-<img src="/images/png/icon-design.png" alt="">
+<img src="./images/png/icon-design.png" alt="">
 <p>デザインは目的を達成するための手段であると考えています。目的に沿ったクリエイティブを作成するために、情報を届ける相手がいることを常に意識してデザインを行っています。<br>
     Illustrator, Photoshop, XDなどのデザインツールを活用し、バナー制作やWebデザイン、UI設計などをさせていただいてます。</p>
 <!-- /design --></section>
 
 <section class="coding">
 <h3>CODING</h3>
-<img src="/images/png/icon-coading.png" alt="">
+<img src="./images/png/icon-coading.png" alt="">
 <p>ユーザーが実現したいことに対する適切な動きや効果を用いることで、目的に沿ったユーザー体験を実現できると考えています。<br>
     ただデザインされたものを再現するのではなく、SEO対策やメンテナンス性を考慮したコーディングを行うよう心掛けています。</p>
 <!-- /coding --></section>
 
 <section class="skills">
 <h3>SKILLS</h3>
-<ul class="design-skills">
-<li><img src="/images/svg/icon-illustrator.svg" alt=""><p>Illustrator</p></li>
-<li><img src="/images/svg/icon-photoshop.svg" alt=""><p>Photoshop</p></li>
-<li><img src="/images/svg/icon-xd.svg" alt=""><p>XD</p></li>
-<li><img src="/images/svg/icon-premiere-pro.svg" alt=""><p>Premiere Pro</p></li>
-<li><img src="/images/svg/icon-lightroom.svg.svg" alt=""><p>Lightroom</p></li>
-</ul>
-<ul class="coding-skills">
-<li><img src="/images/png/icon-html.png" alt=""><p>HTML</p></li>
-<li><img src="/images/png/icon-css.png" alt=""><p>CSS</p></li>
-<li><img src="/images/png/icon-javascript.png" alt=""><p>JavaScript</p></li>
-<li><img src="/images/svg/icon-bootstrap.svg" alt=""><p>Bootstrap</p></li>
-<li><img src="/images/svg/icon-github.svg" alt=""><p>GitHub</p></li>
-</ul>
+<ul class="skills-design">
+<li><img src="./images/svg/icon-illustrator.svg" alt=""><p>Illustrator</p></li>
+<li><img src="./images/svg/icon-photoshop.svg" alt=""><p>Photoshop</p></li>
+<li><img src="./images/svg/icon-xd.svg" alt=""><p>XD</p></li>
+<li><img src="./images/svg/icon-premiere-pro.svg" alt=""><p>Premiere Pro</p></li>
+<li><img src="./images/svg/icon-lightroom.svg" alt=""><p>Lightroom</p></li>
+<!-- /design-skills --></ul>
+<ul class="skills-coding">
+<li><img src="./images/png/icon-html.png" alt=""><p>HTML</p></li>
+<li><img src="./images/png/icon-css.png" alt=""><p>CSS</p></li>
+<li><img src="./images/png/icon-javascript.png" alt=""><p>JavaScript</p></li>
+<li><img src="./images/svg/icon-bootstrap.svg" alt=""><p>Bootstrap</p></li>
+<li><img src="./images/svg/icon-github.svg" alt=""><p>GitHub</p></li>
+<!-- /coding-skills --></ul>
 <!-- /skills --></section>
 <!-- /about --></section>
 
-
 <section class="works">
-
+<h2>WORKS</h2>
+<ul>
+<li><p><a href=""><img src="./images/png/reqruit.png" alt="就活ポートフォリオサイト"></a></p></li>
+<li><p><a href=""><img src="./images/png/app-atcosme.png" alt="アットコスメアプリバナー"></a></p></li>
+<li><p><a href=""><img src="./images/png/beautyday.jpg" alt="ビューティーデイバナー"></a></p></li>
+<li><p><a href=""><img src="./images/png/mens-cosme.jpg" alt="メンズコスメバナー"></a></p></li>
+</ul>
+<p>MORE</p>
 <!-- /works --></section>
 
-
 <section class="contact">
-
+<h2>CONTACT</h2>
+<p>プロフィールや作品見て興味が湧いた方はこちらからご連絡お願いします！</p>
+<form action="#">
+<p>Company</p>
+<p><input type="text" name="company"></p>
+<p>Name</p>
+<p><input type="text" name="name"></p>
+<p>E-mail</p>
+<p><input type="text" name="e-mail"></p>
+<p>TEL</p>
+<p><input type="tel" name="tel"></p>
+<p>Message</p>
+<p><input type="text" name="message"></p>
+<button type="button" name="send">SEND</button>
+</form>
 <!-- /contact --></section> 
-
 <!-- /main --></div>
 
 <footer class="footer">
-    
+<ul class="icon-sns">
+<li><a href="https://www.instagram.com/tukkyo117/?hl=ja"><img src="./images/png/icon-instagram.png" alt="instagram"></a></li>
+<li><a href="https://www.facebook.com/profile.php?id=100022762025755"><img src="./images/png/icon-facebook.png" alt="facebook"></a></li>
+<!-- /icon-sns --></ul>
+<a href="#">
+<span>TOP</span>
+</a>
+<small>© 2020 Kyosuke Tsukamoto.</small>
 <!-- /footer --></footer>
-    
+
+<!-- /container --></div>  
 </body>
 </html>
