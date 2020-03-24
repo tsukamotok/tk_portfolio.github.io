@@ -11,14 +11,20 @@
 
 <header class="header">
 <h1 class="header-title"><a href="#">KYOSUKE TSUKAMOTO</a></h1>
-<nav>
+
+<div class="btn-icon" id="js-btn-icon">
+    <span class="icon-bar icon-bar1"></span>
+    <span class="icon-bar icon-bar2"></span>
+    <span class="icon-bar icon-bar3"></span>
+<!-- /btn --></div>
+<nav class="global-nav">
 <ul>
-<li>TOP</li>
-<li>ABOUT</li>
-<li>WORKS</li>
-<li>CONTACT</li>
+<li><a href="#">TOP</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">WORKS</a></li>
+<li><a href="#">CONTACT</a></li>
 </ul>
-</nav>
+<!-- /global-nav --></nav>
 <!-- /header --></header>
 
 <div class="main">
@@ -28,47 +34,70 @@
 
 <section class="about">
 <div class="about-visual">
-<h2>ABOUT</h2>
+<h2 class="section-title  about-title">ABOUT</h2>
 <img src="./images/png/tk.png" alt="塚本恭輔輔について">
 </div>
 
 <section class="profile">
-<h3>PROFILE</h3>
+<h3 class="sub-title">PROFILE</h3>
+<div class="prof-box">
 <p class="name">塚本恭輔</p>
 <p class="name-en">Kyosuke Tsukamoto</p>
 <p class="background">1997年生まれ　デザイナー<br>
  東京都内の事業会社でWeb制作をしています。<br>
-公立はこだて未来大学 情報デザインコースを卒業し、株式会社アイスタイルに新卒入社。<br>
+2019年 公立はこだて未来大学 情報デザインコースを卒業し、株式会社アイスタイルに新卒入社。<br>
 UIデザイナーとして、デザイン・コーディングなどの業務を行う。</p>
 <ul class="icon-sns">
-<li><a href="https://www.instagram.com/tukkyo117/?hl=ja"><img src="./images/png/icon-instagram.png" alt="instagram"></a></li>
-<li><a href="https://www.facebook.com/profile.php?id=100022762025755"><img src="./images/png/icon-facebook.png" alt="facebook"></a></li>
+<li><a href="https://www.instagram.com/tukkyo117/?hl=ja"><img src="./images/png/icon-instagram.png" alt="instagram"></a></li><!--   
+--><li><a href="https://www.facebook.com/profile.php?id=100022762025755"><img src="./images/png/icon-facebook.png" alt="facebook"></a></li>
 <!-- /icon-sns --></ul>
+<!-- /profile-box --></div>
 <!-- /profile --></section>
 
+<div class="prof-box">
 <section class="design">
-<h3>DESIGN</h3>
+<h3 class="sub-title">DESIGN</h3>
+<div class="prof-icon">
 <img src="./images/png/icon-design.png" alt="">
-<p>デザインは目的を達成するための手段であると考えています。目的に沿ったクリエイティブを作成するために、情報を届ける相手がいることを常に意識してデザインを行っています。<br>
+<!-- /prof-icon --></div>
+<p class="prof-text">デザインは目的を達成するための手段であると考えています。目的に沿ったクリエイティブを作成するために、情報を届ける相手がいることを常に意識してデザインを行っています。<br>
     Illustrator, Photoshop, XDなどのデザインツールを活用し、バナー制作やWebデザイン、UI設計などをさせていただいてます。</p>
 <!-- /design --></section>
+<!-- /prof-box --></div>
 
+<div class="prof-box">
 <section class="coding">
-<h3>CODING</h3>
+<h3 class="sub-title">CODING</h3>
+<div class="prof-icon">
 <img src="./images/png/icon-coading.png" alt="">
-<p>ユーザーが実現したいことに対する適切な動きや効果を用いることで、目的に沿ったユーザー体験を実現できると考えています。<br>
+<!-- /prof-icon --></div>
+<p class="prof-text">ユーザーが実現したいことに対する適切な動きや効果を用いることで、目的に沿ったユーザー体験を実現できると考えています。<br>
     ただデザインされたものを再現するのではなく、SEO対策やメンテナンス性を考慮したコーディングを行うよう心掛けています。</p>
 <!-- /coding --></section>
+<!-- /prof-box --></div>
 
 <section class="skills">
-<h3>SKILLS</h3>
+<h3 class="sub-title">SKILLS</h3>
+<div class="skills-box">
+<div class="design-box">
 <ul class="skills-design">
 <li><img src="./images/svg/icon-illustrator.svg" alt=""><p>Illustrator</p></li>
-<li><img src="./images/svg/icon-photoshop.svg" alt=""><p>Photoshop</p></li>
-<li><img src="./images/svg/icon-xd.svg" alt=""><p>XD</p></li>
 <li><img src="./images/svg/icon-premiere-pro.svg" alt=""><p>Premiere Pro</p></li>
+<!-- /design-skills --></ul>
+<!-- /design-box --></div>
+<div class="design-box">
+<ul class="skills-design">
+<li><img src="./images/svg/icon-photoshop.svg" alt=""><p>Photoshop</p></li>
 <li><img src="./images/svg/icon-lightroom.svg" alt=""><p>Lightroom</p></li>
 <!-- /design-skills --></ul>
+<!-- /design-box --></div>
+<div class="design-box">
+<ul class="skills-design">
+<li><img src="./images/svg/icon-xd.svg" alt=""><p>XD</p></li>
+<!-- /design-skills --></ul>
+<!-- /design-box --></div>
+<!-- /skills-box --></div>
+
 <ul class="skills-coding">
 <li><img src="./images/png/icon-html.png" alt=""><p>HTML</p></li>
 <li><img src="./images/png/icon-css.png" alt=""><p>CSS</p></li>
@@ -76,11 +105,12 @@ UIデザイナーとして、デザイン・コーディングなどの業務を
 <li><img src="./images/svg/icon-bootstrap.svg" alt=""><p>Bootstrap</p></li>
 <li><img src="./images/svg/icon-github.svg" alt=""><p>GitHub</p></li>
 <!-- /coding-skills --></ul>
+</div>
 <!-- /skills --></section>
 <!-- /about --></section>
 
 <section class="works">
-<h2>WORKS</h2>
+<h2 class="section-title works-title">WORKS</h2>
 <ul>
 <li><p><a href=""><img src="./images/png/reqruit.png" alt="就活ポートフォリオサイト"></a></p></li>
 <li><p><a href=""><img src="./images/png/app-atcosme.png" alt="アットコスメアプリバナー"></a></p></li>
@@ -91,7 +121,7 @@ UIデザイナーとして、デザイン・コーディングなどの業務を
 <!-- /works --></section>
 
 <section class="contact">
-<h2>CONTACT</h2>
+<h2 class="section-title contact-title">CONTACT</h2>
 <p>プロフィールや作品見て興味が湧いた方はこちらからご連絡お願いします！</p>
 <form action="#">
 <p>Company</p>
@@ -121,5 +151,6 @@ UIデザイナーとして、デザイン・コーディングなどの業務を
 <!-- /footer --></footer>
 
 <!-- /container --></div>  
+<script src="./script.js"></script>
 </body>
 </html>

@@ -2,25 +2,31 @@
 
 body {
     width: 375px;
-    font-family: 'Lato', 'ヒラギノ角ゴ Pro';
+    font-family: 'Lato', sans-serif, 'ヒラギノ角ゴ Pro';
     margin: 0 auto;
     color: #fff;
-    background-color: #000000;
+    background-color: #000;
 }
 
 /* ヘッダー */
+/* ヘッダータイトル */
 .header {
-    margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 375px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4)
 }
 
 .header-title {
-    width: 200px;
+    width: 160px;
     height: 17px;
-    line-height: 20px;
     margin: 16px auto;
     font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
 }
-
 .header-title a {
     display: block;
     text-decoration: none;
@@ -28,23 +34,249 @@ body {
     color: #fff;
 }
 
+/* メニュー */
+.btn-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    right: 2px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 300;
+}
 
-.main-visual img {
+.icon-bar {
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 1px;
+    background-color: #fff;
+    transition: all .2s;
+}
+.icon-bar1 {
+    top: 14px;
+}
+  .icon-bar2 {
+    top: 20px;
+}
+  .icon-bar3 {
+    top: 26px;
+}
+
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+    right: 0;
+}
+.nav-open .icon-bar1 {
+    transform: rotate(45deg);
+    top: 20px;
+}
+.nav-open .icon-bar2 {
+    width: 0;
+    left: 50%;
+}
+.nav-open .icon-bar3 {
+    transform: rotate(-45deg);
+    top: 20px;
+}
+
+.global-nav {
+    position: fixed;
+    right: -375px; 
+    top: 0;
+    width: 375px; 
+    height: 100vh;
+    padding-top: 40px;
+    background-color: #000;
+    z-index: 200;
+}
+
+.global-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .global-nav li {
+    text-align: center;
+    padding: 0 14px;
+  }
+  .global li a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
+  .global li a:hover {
+    background-color: #eee;
+  }
+
+/* メインビジュアル */
+.main-visual {
     width: 375px;
+    height: 450px;
+    margin-top: 50px;
+
+}
+
+/* セクション共通 */
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* ABOUT */
+.about-title {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.about-title::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #c21ce1;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.about-title::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #c21ce1;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 .about-visual img {
     width: 375px;
 }
 
+/* PROFILE */
+.prof-box {
+    width: 315px;
+    margin: 0 auto;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.name-en {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 3px;
+}
+
+.background {
+    width: 315px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
 .icon-sns {
     list-style: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-sns li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.icon-sns a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 
 .icon-sns img {
-
     width: 30px;
 }
+
+/* DESIGN COADING */ 
+.prof-icon {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.prof-icon img{
+    width: 60px;
+}
+
+.prof-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+
+/* SKILLS */
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.skills-box ul {
+    text-align: center;
+    margin: 0;
+}
+
+.skills-box li {
+    width: 105px;
+}
+
+.skills-box img {
+    display: block;
+    width: 65px;
+    margin: 0 auto;
+}
+
+.skills-box p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0px;
+}
+
+
+.skills-design {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
+
 
 
 .works img {
