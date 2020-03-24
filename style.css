@@ -226,13 +226,15 @@ body {
 }
 
 .prof-icon img{
+    display: block;
     width: 60px;
+    margin: 0 auto;
 }
 
 .prof-text {
     font-size: 14px;
     line-height: 25px;
-    margin-top: 23px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 
@@ -241,17 +243,27 @@ body {
 .skills-box {
     display: flex;
     justify-content: center;
-
     margin-top: 30px;
+}
+
+.skills-box:last-child {
+    margin-top: 40px;
 }
 
 .skills-box ul {
     text-align: center;
     margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .skills-box li {
     width: 105px;
+    margin-bottom: 30px;
+}
+
+.skills-box li:last-child {
+    margin-bottom: 0;
 }
 
 .skills-box img {
@@ -263,14 +275,10 @@ body {
 .skills-box p {
     font-size: 14px;
     line-height: 20px;
-    margin-top: 0px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
-
-.skills-design {
-    list-style: none;
-    padding: 0;
-}
 
 
 
