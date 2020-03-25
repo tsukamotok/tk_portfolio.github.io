@@ -20,7 +20,7 @@ body {
 }
 
 .header-title {
-    width: 160px;
+    width: 200px;
     height: 17px;
     margin: 16px auto;
     font-size: 14px;
@@ -40,7 +40,7 @@ body {
     width: 40px;
     height: 40px;
     top: 4px;
-    right: 2px;
+    right: 10px;
     color: #fff;
     cursor: pointer;
     z-index: 300;
@@ -48,9 +48,9 @@ body {
 
 .icon-bar {
     position: absolute;
-    left: 11px;
-    width: 18px;
-    height: 1px;
+    left: 10px;
+    width: 20px;
+    height: 2px;
     background-color: #fff;
     transition: all .2s;
 }
@@ -64,7 +64,7 @@ body {
     top: 26px;
 }
 
-/* 表示された時用のCSS */
+/* メニューのモーダル */
 .nav-open .global-nav {
     right: 0;
 }
@@ -84,32 +84,46 @@ body {
 .global-nav {
     position: fixed;
     right: -375px; 
-    top: 0;
+    top: 50;
     width: 375px; 
     height: 100vh;
-    padding-top: 40px;
     background-color: #000;
     z-index: 200;
 }
 
 .global-nav ul {
-    margin: 0;
+    margin-top: 134px;
     padding: 0;
+    font-weight: 500;
     list-style: none;
   }
   .global-nav li {
     text-align: center;
-    padding: 0 14px;
+    margin-bottom: 30px;
   }
-  .global li a {
-    display: block;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+  .nav-item {
+    display: inline-block;
     text-decoration: none;
-    color: #111;
+    font-size: 28px;
+    color: #fff;
+    padding-bottom: 6px;
+    line-height: 20px;
   }
-  .global li a:hover {
-    background-color: #eee;
+
+  .nav-top {
+    border-bottom: 1px solid #f5b400;
+  }
+
+  .nav-about {
+    border-bottom: 1px solid #c21ce1;
+  }
+
+  .nav-works {
+    border-bottom: 1px solid #5de11c;
+  }
+
+  .nav-contact {
+    border-bottom: 1px solid #1ce1e1;
   }
 
 /* メインビジュアル */
@@ -117,8 +131,12 @@ body {
     width: 375px;
     height: 450px;
     margin-top: 50px;
-
 }
+
+.main-visual img{
+    width: 375px;
+}
+
 
 /* セクション共通 */
 .section-title {
@@ -207,6 +225,10 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 20px;
+}
+
+.icon-sns li:last-child {
+    margin-right: 0;
 }
 
 .icon-sns a {
@@ -421,10 +443,8 @@ body {
     height: 30px;
     padding: 0;
     font-size: 14px;
-}
-
-.form-input input {
-    border: none;
+    border-radius: 0;
+    -webkit-border-radius : 0;
 }
 
 .input-large {
@@ -453,7 +473,7 @@ body {
     width: 100px;
     height: 35px;
     margin: 0 auto;
-    padding-top: 4px;
+    padding-top: 1px;
     font-size: 16px;
     color: #fff;
     background-color: #000;
@@ -462,34 +482,25 @@ body {
 }
 
 .footer {
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
 }
 
 .icon-footer {
-    margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.icon-footer li{
-    margin-right: 20px;
-}
-
-.icon-sns li:last-child {
-    margin-right: 0;
-}
-
-#page_top {
+#page-top {
     width: 64px;
     height: 27px;
     position: fixed;
     right: 20px;
-    bottom: 155px;
+    bottom: 37px;
     background: #333;
     vertical-align: middle;
 }
 
-#page_top a {
+#page-top a {
     display: inline-block;
     position: relative;
     text-decoration: none;
