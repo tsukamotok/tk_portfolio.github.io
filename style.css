@@ -478,3 +478,29 @@ body {
 .icon-sns li:last-child {
     margin-right: 0;
 }
+
+#page_top {
+    width: 64px;
+    height: 27px;
+    position: fixed;
+    right: 20px;
+    bottom: 155px;
+    background: #333;
+    vertical-align: middle;
+}
+
+#page_top a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    width: 64px;
+    height: 27px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.copyright {
+    display: inline-block;
+    margin-bottom: 35px;
+}
