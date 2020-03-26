@@ -450,15 +450,28 @@ body {
 }
 
 .input-large {
+    width: 335px;
     height: 185px;
     margin-bottom: 40px;
 }
 
-.input-large input {
+.input-large textarea {
+    display: block;
+    border: none;
+    width: 335px;
     height: 185px;
+    padding: 0;
+    font-size: 14px;
+    border-radius: 0;
+    -webkit-border-radius : 0;
 }
 
 .form-input input:focus {
+    border: 1px solid #1cc6e1;
+    outline: 0;
+}
+
+.form-input textarea:focus {
     border: 1px solid #1cc6e1;
     outline: 0;
 }
