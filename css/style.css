@@ -64,28 +64,7 @@ body {
     top: 26px;
 }
 
-/* メニューのモーダル */
-.header-open {
-    background-color: #000;
-}
-
-.nav-open .global-nav {
-    right: 0;
-}
-.nav-open .icon-bar1 {
-    transform: rotate(45deg);
-    top: 20px;
-    height: 1px;
-}
-.nav-open .icon-bar2 {
-    display: none;
-}
-.nav-open .icon-bar3 {
-    transform: rotate(-45deg);
-    top: 20px;
-    height: 1px;
-}
-
+/* メニューモーダル */
 .global-nav {
     position: fixed;
     right: -375px; 
@@ -130,6 +109,29 @@ body {
   .nav-contact {
     border-bottom: 1px solid #1ce1e1;
   }
+
+/* メニューモーダル展開時 */
+.header-open {
+    background-color: #000;
+}
+
+.nav-open .global-nav {
+    right: 0;
+}
+.nav-open .icon-bar1 {
+    transform: rotate(45deg);
+    top: 20px;
+    height: 1px;
+}
+.nav-open .icon-bar2 {
+    display: none;
+}
+.nav-open .icon-bar3 {
+    transform: rotate(-45deg);
+    top: 20px;
+    height: 1px;
+}
+
 
 /* メインビジュアル */
 .main-visual {
@@ -428,7 +430,7 @@ body {
 }
 
 .form-input {
-    width: 335px;
+    width: 328px;
     height: 30px;
     margin-top: 0;
     margin-bottom: 20px;
@@ -441,9 +443,9 @@ body {
 .form-input input {
     display: block;
     border: none;
-    width: 335px;
+    width: 328px;
     height: 30px;
-    padding: 0;
+    padding-left: 7px;
     font-size: 14px;
     border-radius: 0;
     -webkit-border-radius : 0;
@@ -455,13 +457,14 @@ body {
     margin-bottom: 40px;
 }
 
-.input-large textarea {
+.form-input textarea {
     display: block;
     border: none;
-    width: 335px;
+    width: 321px;
     height: 185px;
-    padding: 0;
+    padding: 5px 7px;
     font-size: 14px;
+    letter-spacing: -0.1px;
     border-radius: 0;
     -webkit-border-radius : 0;
 }
