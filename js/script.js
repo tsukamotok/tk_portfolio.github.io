@@ -8,11 +8,13 @@ function toggleNav() {
 
   btnIcon.onclick = function() {
     body.classList.toggle('nav-open');
+    body.classList.toggle('fixed');
     header.classList.toggle('header-open');
     };
 
     globalNav.onclick = function() {
       body.classList.toggle('nav-open');
+      body.classList.toggle('fixed');
       header.classList.toggle('header-open');
     }
   }
