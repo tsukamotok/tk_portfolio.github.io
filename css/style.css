@@ -2,7 +2,7 @@
 
 body {
     width: 375px;
-    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: 'Lato', 'Noto Sans JP', \30D2\30E9\30AE\30CE\89D2\30B4\20Pro\20W3, 'Hiragino Kaku Gothic Pro', \30E1\30A4\30EA\30AA, Meiryo, \FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF, 'MS PGothic', sans-serif;
     margin: 0 auto;
     color: #fff;
     background-color: #000;
@@ -13,7 +13,6 @@ body {
 }
 
 /* ヘッダー */
-/* ヘッダータイトル */
 .header {
     position: fixed;
     margin: 0 auto;
@@ -24,12 +23,12 @@ body {
     z-index: 9999;
 }
 
+/* ヘッダータイトル */
 .header-title {
     width: 200px;
     height: 17px;
     margin: 16px auto;
     font-size: 14px;
-    font-weight: 500;
     line-height: 20px;
 }
 .header-title a {
@@ -58,13 +57,16 @@ body {
     height: 2px;
     background-color: #fff;
 }
+
 .icon-bar1 {
     top: 14px;
 }
-  .icon-bar2 {
+
+.icon-bar2 {
     top: 20px;
 }
-  .icon-bar3 {
+
+.icon-bar3 {
     top: 26px;
 }
 
@@ -81,38 +83,38 @@ body {
 .global-nav ul {
     margin-top: 134px;
     padding: 0;
-    font-weight: 500;
     list-style: none;
-  }
-  .global-nav li {
+}
+
+.global-nav li {
     text-align: center;
     margin-bottom: 36px;
-  }
-  .nav-item {
+}
+
+.nav-item {
     display: inline-block;
     text-decoration: none;
     font-size: 28px;
-    font-weight: 500;
     color: #fff;
     padding-bottom: 7px;
     line-height: 20px;
-  }
+}
 
-  .nav-top {
+.nav-top {
     border-bottom: 1px solid #f5b400;
   }
 
-  .nav-about {
+.nav-about {
     border-bottom: 1px solid #c21ce1;
-  }
+}
 
-  .nav-works {
+.nav-works {
     border-bottom: 1px solid #5de11c;
-  }
+}
 
-  .nav-contact {
+.nav-contact {
     border-bottom: 1px solid #1ce1e1;
-  }
+}
 
 /* メニューモーダル展開時 */
 .header-open {
@@ -157,7 +159,19 @@ body {
 .section-title {
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
+}
+
+.prof-box {
+    width: 315px;
+    margin: 0 auto;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 
@@ -167,23 +181,20 @@ body {
     margin-bottom: 50px;
 }
 
-.about-title::before {
+.about-title::before, .about-title::after {
     content: '';
     display: inline-block;
     width: 40px;
     height: 1px;
     background-color: #c21ce1;
     vertical-align: middle;
+}
+
+.about-title::before {
     margin-right: 10px;
 }
 
 .about-title::after {
-    content: '';
-    display: inline-block;
-    width: 40px;
-    height: 1px;
-    background-color: #c21ce1;
-    vertical-align: middle;
     margin-left: 10px;
 }
 
@@ -192,20 +203,6 @@ body {
 }
 
 /* PROFILE */
-.prof-box {
-    width: 315px;
-    margin: 0 auto;
-}
-
-.sub-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
 .name {
     font-size: 22px;
     line-height: 20px;
@@ -219,19 +216,18 @@ body {
     margin-top: 3px;
 }
 
-.background {
+.prof-text {
     width: 315px;
     font-size: 14px;
     line-height: 25px;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
-
+/* SNSアイコン */
 .icon-sns {
     list-style: none;
     height: 30px;
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
 }
 
@@ -248,8 +244,6 @@ body {
 
 .icon-sns a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
 }
 
 .icon-sns img {
@@ -257,22 +251,14 @@ body {
 }
 
 /* DESIGN COADING */ 
-.prof-icon {
+.tech-icon {
     margin-top: 30px;
-    text-align: center;
 }
 
-.prof-icon img{
+.tech-icon img{
     display: block;
     width: 60px;
     margin: 0 auto;
-}
-
-.prof-text {
-    font-size: 14px;
-    line-height: 25px;
-    margin-top: 30px;
-    margin-bottom: 0px;
 }
 
 /* SKILLS */
@@ -489,21 +475,19 @@ body {
 
 .form-input input::placeholder {
     font-size: 14px;
-    font-weight: 500;
     color: #999;
 }
 
 .form-input input::-webkit-placeholder {
     font-size: 14px;
-    font-weight: 500;
     color: #999;
 }
 
 .required {
-      margin-left: 10px;
-      font-size: 12px;
-      color: #FF0000;
-      line-height: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #FF0000;
+    line-height: 20px;
 }
 
 .btn-send {
