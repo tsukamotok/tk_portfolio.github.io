@@ -2,7 +2,7 @@
 
 body {
     width: 375px;
-    font-family: 'Lato', 'Noto Sans JP', sans-serif;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     margin: 0 auto;
     color: #fff;
     background-color: #000;
