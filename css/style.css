@@ -351,25 +351,32 @@ body {
 }
 
 .arrow {
+    position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
+    width: 40px;
+    height: 12px;
+    margin: 30px auto 6px;
     text-align: center;
 }
 
 .arrow::before {
+    position: absolute;
     display: inline-block;
     content: '';
-    width: 20px;
+    top: 6px;
+    width: 18px;
+    left: 4px;
     border-top: solid 1px #fff;
     transform: rotate(35deg);
 }
 
 .arrow::after {
+    position: absolute;
     display: inline-block;
+    top: 6px;
+    right: 4px;
     content: '';
-    width: 20px;
+    width: 18px;
     border-top: solid 1px #fff;
     transform: rotate(-35deg);
 }
