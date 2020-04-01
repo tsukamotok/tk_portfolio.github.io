@@ -9,7 +9,7 @@ body {
 }
 
 .fixed {
-	position: fixed;
+    overflow: hidden;
 }
 
 /* ヘッダー */
@@ -550,4 +550,18 @@ body {
 .copyright {
 	display: inline-block;
 	margin-bottom: 35px;
+}
+
+/* 送信完了モーダル */
+.send-done {
+    position: fixed;
+	top: 50;
+	right: -375px;
+	width: 375px;
+    height: 100vh;
+	background-color: #000;
+}
+
+.send-modal-open {
+    right: 0;
 }

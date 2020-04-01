@@ -118,7 +118,7 @@ UIデザイナーとして、デザイン・コーディングなどの業務を
 <h2 class="section-title contact-title">CONTACT</h2>
 <div class="contact-box">
 <p class="contact-explanation">プロフィールや作品見て興味が湧いた方はこちらからご連絡お願いします！</p>
-<form class="form" action="#">
+<form class="form">
 <p class="form-item">Company</p>
 <p class="form-input"><input type="text" name="company" maxlength="30"></p>
 <p class="form-item">Name</p><span class="required">必須</span>
@@ -129,9 +129,16 @@ UIデザイナーとして、デザイン・コーディングなどの業務を
 <p class="form-input"><input type="tel" name="tel" maxlength="11" placeholder="例）09012345678"></p>
 <p class="form-item">Message</p><span class="required">必須</span>
 <p class="form-input input-large"><textarea name="message" maxlength="9999" id="js-message" cols="30" rows="400"></textarea></p>
-<button class="btn-send" type="button" name="send">SEND</button>
+<button class="btn-send" id="js-btn-send" type="button" name="send" onclick="onButtonClick();">SEND</button>
 </form>
 <!-- /contact-box --></div>
+
+<div class="send-done" id="js-send-done">
+<p class="send-wording">送信が完了しました</p>
+<p class="attention">※ 3日経っても返信がない場合は、お手数ですがもう一度ご連絡をお願い致します。</p>
+<p class="back-top">BACK</p>
+</div>
+
 <!-- /contact --></section> 
 <!-- /main --></div>
 
