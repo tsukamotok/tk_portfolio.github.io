@@ -55,6 +55,8 @@ function onButtonClick() {
   const tel = document.getElementsByName('tel');
   const message = document.getElementsByName('message');
 
+  sendError();
+
   const contact = {
     company: company[0].value,
     name: name[0].value,
@@ -67,3 +69,20 @@ function onButtonClick() {
     console.log(p + ':' + contact[p]);
   }
 }
+
+function sendError() {
+  const sendCheck = document.getElementsByClassName('send-check');
+  const errorWord = '<p class="error-word">必須項目に記入もれがあります。</p>';
+  for(let i = 0; i < sendCheck.length; i++) {
+    const sendName = sendCheck[i];
+    sendName.style.marginBottom = '0';
+    sendName.insertAdjacentHTML('afterend', errorWord);
+  }
+
+
+
+
+}
+
+
+

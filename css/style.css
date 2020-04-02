@@ -469,7 +469,7 @@ body {
 
 .input-large {
 	width: 335px;
-	height: 185px;
+	height: 195px;
 	margin-bottom: 40px;
 }
 
@@ -602,6 +602,11 @@ body {
 	content: '';
 }
 
-/* 送信完了モーダル展開時 */
-
+/* 送信後エラー時 */
+.error-word {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color: #ff0000;
+    line-height: 20px;
 }
