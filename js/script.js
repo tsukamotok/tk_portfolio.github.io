@@ -10,6 +10,10 @@ function toggleNav() {
     body.classList.toggle('nav-open');
     body.classList.toggle('fixed');
     header.classList.toggle('header-open');
+
+    if(document.getElementById('js-send-done').classList.contains('send-modal-open')) {
+      document.getElementById('js-send-done').classList.toggle('send-modal-open');
+    }
     };
 
     globalNav.onclick = function() {
@@ -26,6 +30,8 @@ function toggleNav() {
 function onButtonClick() {
   const send = document.getElementById('js-send-done');
   const body = document.body;
+  body.classList.toggle('nav-open');
+  body.classList.toggle('fixed');
   send.classList.toggle('send-modal-open');
   document.getElementById('js-header').classList.toggle('header-open');
 

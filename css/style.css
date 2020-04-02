@@ -16,7 +16,7 @@ body {
 .header {
 	position: fixed;
 	top: 0;
-	z-index: 9999;
+	z-index: 1000;
 	width: 375px;
 	height: 50px;
 	margin: 0 auto;
@@ -73,7 +73,7 @@ body {
 /* メニューモーダル */
 .global-nav {
 	position: fixed;
-	top: 50;
+	top: 50px;
 	right: -375px;
 	width: 375px;
 	height: 100vh;
@@ -121,26 +121,28 @@ body {
 	background-color: #000;
 }
 
-.nav-open .global-nav {
-	right: 0;
-}
-.nav-open .icon-bar1 {
+.header-open .icon-bar1 {
 	top: 20px;
 	left: 9px;
 	width: 23px;
 	height: 1px;
 	transform: rotate(45deg);
 }
-.nav-open .icon-bar2 {
+.header-open .icon-bar2 {
 	display: none;
 }
-.nav-open .icon-bar3 {
+.header-open .icon-bar3 {
 	top: 20px;
 	left: 9px;
 	width: 23px;
 	height: 1px;
 	transform: rotate(-45deg);
 }
+
+.nav-open .global-nav {
+	right: 0;
+}
+
 
 
 /* メインビジュアル */
@@ -552,8 +554,9 @@ body {
 
 /* 送信完了モーダル */
 .send-done {
-	position: fixed;
-	top: 50;
+    position: fixed;
+    z-index: 1100;
+	top: 50px;
 	right: -375px;
 	width: 375px;
 	height: 100vh;
@@ -596,4 +599,8 @@ body {
 	border-right: 1px solid #fff;
 	transform: rotate(45deg);
 	content: '';
+}
+
+/* 送信完了モーダル展開時 */
+
 }
