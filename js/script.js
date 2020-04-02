@@ -57,26 +57,21 @@ function onButtonClick() {
 
   sendError();
 
-  const contact = {
-    company: company[0].value,
-    name: name[0].value,
-    eMail: eMail[0].value,
-    tel: tel[0].value,
-    message: message[0].value
-  };
-
-  for(let p in contact) {
-    console.log(p + ':' + contact[p]);
-  }
 }
 
 function sendError() {
   const sendCheck = document.getElementsByClassName('send-check');
   const errorWord = '<p class="error-word">必須項目に記入もれがあります。</p>';
+
   for(let i = 0; i < sendCheck.length; i++) {
     const sendName = sendCheck[i];
+    // const sendValue = document.getElementById('js-form').input_message.value;
     sendName.style.marginBottom = '0';
     sendName.insertAdjacentHTML('afterend', errorWord);
+
+    // if(sendValue === null) {
+
+    // }
   }
 
 
