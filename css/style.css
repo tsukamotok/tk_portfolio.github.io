@@ -592,12 +592,13 @@ body {
 
 .back-top::before {
 	display: inline-block;
-	width: 5px;
-	height: 5px;
+	width: 10px;
+	height: 10px;
 	margin-right: 5px;
 	border-top: 1px solid #fff;
-	border-right: 1px solid #fff;
-	transform: rotate(45deg);
+	border-left: 1px solid #fff;
+    transform: rotate(-45deg);
+    vertical-align: middle;
 	content: '';
 }
 
