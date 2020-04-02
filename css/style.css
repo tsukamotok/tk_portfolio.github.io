@@ -1,0 +1,612 @@
+@charset 'UTF-8';
+
+body {
+	width: 375px;
+	margin: 0 auto;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Lato', 'Noto Sans JP', \30D2\30E9\30AE\30CE\89D2\30B4\20Pro\20W3, 'Hiragino Kaku Gothic Pro', \30E1\30A4\30EA\30AA, Meiryo, \FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF, 'MS PGothic', sans-serif;
+}
+
+.fixed {
+	overflow: hidden;
+}
+
+/* ヘッダー */
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 375px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+/* ヘッダータイトル */
+.header-title {
+	width: 200px;
+	height: 17px;
+	margin: 16px auto;
+	font-size: 14px;
+	line-height: 20px;
+}
+.header-title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* メニュー */
+.btn-icon {
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	z-index: 300;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.icon-bar {
+	position: absolute;
+	left: 10px;
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.icon-bar1 {
+	top: 14px;
+}
+
+.icon-bar2 {
+	top: 20px;
+}
+
+.icon-bar3 {
+	top: 26px;
+}
+
+/* メニューモーダル */
+.global-nav {
+	position: fixed;
+	top: 50px;
+	right: -375px;
+	width: 375px;
+	height: 100vh;
+	background-color: #000;
+}
+
+.global-nav ul {
+	list-style: none;
+	margin-top: 134px;
+	padding: 0;
+}
+
+.global-nav li {
+	margin-bottom: 36px;
+	text-align: center;
+}
+
+.nav-item {
+	display: inline-block;
+	padding-bottom: 7px;
+	color: #fff;
+	font-size: 28px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.nav-top {
+	border-bottom: 1px solid #f5b400;
+}
+
+.nav-about {
+	border-bottom: 1px solid #c21ce1;
+}
+
+.nav-works {
+	border-bottom: 1px solid #5de11c;
+}
+
+.nav-contact {
+	border-bottom: 1px solid #1ce1e1;
+}
+
+/* メニューモーダル展開時 */
+.header-open {
+	background-color: #000;
+}
+
+.header-open .icon-bar1 {
+	top: 20px;
+	left: 9px;
+	width: 23px;
+	height: 1px;
+	transform: rotate(45deg);
+}
+.header-open .icon-bar2 {
+	display: none;
+}
+.header-open .icon-bar3 {
+	top: 20px;
+	left: 9px;
+	width: 23px;
+	height: 1px;
+	transform: rotate(-45deg);
+}
+
+.nav-open .global-nav {
+	right: 0;
+}
+
+
+
+/* メインビジュアル */
+.main-visual {
+	width: 375px;
+	height: 450px;
+	margin-top: 50px;
+}
+
+.main-visual img {
+	width: 375px;
+}
+
+
+/* セクション共通 */
+.section-title {
+	font-size: 20px;
+	text-align: center;
+}
+
+.prof-box {
+	width: 315px;
+	margin: 0 auto;
+}
+
+.sub-title {
+	margin-top: 50px;
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+}
+
+
+/* ABOUT */
+.about-title {
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.about-title::before,
+.about-title::after {
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background-color: #c21ce1;
+	vertical-align: middle;
+	content: '';
+}
+
+.about-title::before {
+	margin-right: 10px;
+}
+
+.about-title::after {
+	margin-left: 10px;
+}
+
+.about-visual img {
+	width: 375px;
+}
+
+/* PROFILE */
+.name {
+	margin-top: 40px;
+	font-size: 22px;
+	line-height: 20px;
+}
+
+.name-en {
+	margin-top: 3px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.prof-text {
+	width: 315px;
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/* SNSアイコン */
+.icon-sns {
+	list-style: none;
+	height: 30px;
+	margin-top: 30px;
+	padding: 0;
+}
+
+.icon-sns li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.icon-sns li:last-child {
+	margin-right: 0;
+}
+
+.icon-sns a {
+	display: inline-block;
+}
+
+.icon-sns img {
+	width: 30px;
+}
+
+/* DESIGN COADING */
+.tech-icon {
+	margin-top: 30px;
+}
+
+.tech-icon img {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+
+/* SKILLS */
+
+.skills-box {
+	width: 315px;
+	margin: 30px auto 10px;
+}
+
+.skills-box:last-child {
+	margin: 0 auto;
+}
+
+.skills-box ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.skills-box li {
+	width: 105px;
+	margin-bottom: 30px;
+}
+
+.skills-box img {
+	display: block;
+	width: 65px;
+	margin: 0 auto;
+}
+
+.skills-box p {
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+/* WORKS */
+.works-title {
+	margin: 40px 0 50px;
+}
+
+.works-title::before,
+.works-title::after {
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background-color: #7ee11c;
+	vertical-align: middle;
+	content: '';
+}
+
+.works-title::before {
+	margin-right: 10px;
+}
+
+.works-title::after {
+	margin-left: 10px;
+}
+
+.works-list {
+	list-style: none;
+	width: 310px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.works-list li {
+	margin-bottom: 20px;
+}
+
+.works-list li:last-child {
+	margin-bottom: 0;
+}
+
+.works-list p {
+	margin: 0;
+}
+
+.works-list a {
+	display: block;
+}
+
+.works-list img {
+	display: block;
+	width: 310px;
+}
+
+.arrow {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 12px;
+	margin: 30px auto 6px;
+	text-align: center;
+}
+
+.arrow::before {
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	width: 18px;
+	border-top: solid 1px #fff;
+	transform: rotate(35deg);
+	content: '';
+}
+
+.arrow::after {
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	right: 4px;
+	width: 18px;
+	border-top: solid 1px #fff;
+	transform: rotate(-35deg);
+	content: '';
+}
+
+.arrow img {
+	display: block;
+	width: 32px;
+	height: 13px;
+	margin: 30px auto 6px;
+}
+
+.more {
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+
+
+/* CONTACT */
+.contact-title {
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+
+.contact-title::before,
+.contact-title::after {
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background-color: #1cc6e1;
+	vertical-align: middle;
+	content: '';
+}
+
+.contact-title::before {
+	margin-right: 10px;
+}
+
+.contact-title::after {
+	margin-left: 10px;
+}
+
+.contact-box {
+	width: 335px;
+	margin: 0 auto;
+}
+
+.contact-explanation {
+	margin: 0;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.form {
+	margin-top: 40px;
+}
+
+.form-item {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 6px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.form-input {
+	width: 328px;
+	height: 30px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.form-input:last-child {
+	height: 185px;
+}
+
+.form-input input {
+	display: block;
+	width: 328px;
+	height: 30px;
+	padding-left: 7px;
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
+	-webkit-border-radius: 0;
+}
+
+.input-large {
+	width: 335px;
+	height: 195px;
+	margin-bottom: 40px;
+}
+
+.form-input textarea {
+	display: block;
+	width: 321px;
+	height: 185px;
+	padding: 5px 7px;
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
+	line-height: 20px;
+	-webkit-border-radius: 0;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+	border: 1px solid #1cc6e1;
+	outline: 0;
+}
+
+.form-input input::placeholder,
+.form-input input::-webkit-placeholder {
+	color: #999;
+	font-size: 14px;
+}
+
+.required {
+	margin-left: 10px;
+	color: #f00;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.btn-send {
+	display: block;
+	width: 100px;
+	height: 35px;
+	margin: 0 auto;
+	padding-top: 1px;
+	border: 1px solid #fff;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.footer {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.icon-footer {
+	margin-bottom: 20px;
+}
+
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom: 37px;
+	width: 64px;
+	height: 27px;
+	background: #333;
+	vertical-align: middle;
+}
+
+#page-top a {
+	display: inline-block;
+	position: relative;
+	width: 64px;
+	height: 27px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	text-decoration: none;
+}
+
+.copyright {
+	display: inline-block;
+	margin-bottom: 35px;
+}
+
+/* 送信完了モーダル */
+.send-done {
+    position: fixed;
+    z-index: 1100;
+	top: 50px;
+	right: -375px;
+	width: 375px;
+	height: 100vh;
+	background-color: #000;
+	text-align: center;
+}
+
+.send-modal-open {
+	right: 0;
+}
+
+.send-wording {
+	margin-top: 152px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.attention {
+	display: inline-block;
+	width: 296px;
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: left;
+}
+
+.back-top {
+	margin-top: 35px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.back-top::before {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+	content: '';
+}
+
+/* 送信後エラー時 */
+.error-word {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color: #ff0000;
+    line-height: 20px;
+}
