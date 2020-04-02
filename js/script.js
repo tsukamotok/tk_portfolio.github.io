@@ -65,18 +65,9 @@ function sendError() {
 
   for(let i = 0; i < sendCheck.length; i++) {
     const sendName = sendCheck[i];
-    // const sendValue = document.getElementById('js-form').input_message.value;
     sendName.style.marginBottom = '0';
     sendName.insertAdjacentHTML('afterend', errorWord);
-
-    // if(sendValue === null) {
-
-    // }
   }
-
-
-
-
 }
 
 
