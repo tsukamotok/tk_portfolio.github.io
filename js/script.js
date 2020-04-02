@@ -25,6 +25,20 @@ function toggleNav() {
   
   toggleNav();
 
+  function closeSend() {
+    const backTop = document.getElementById('js-back-top');
+
+    backTop.onclick = function() {
+      const send = document.getElementById('js-send-done');
+      const body = document.body;
+      body.classList.toggle('nav-open');
+      body.classList.toggle('fixed');
+      send.classList.toggle('send-modal-open');
+      document.getElementById('js-header').classList.toggle('header-open');
+    }
+  }
+
+  closeSend();
 
 // フォームの値を取得
 function onButtonClick() {
